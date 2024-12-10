@@ -8,7 +8,9 @@ const Password = () => {
   const [hasFocus, sethasFocus] = useState(false);
   const [input, setInput] = useState("");
   const [isShowPassword, setIsShowPassword] = useState(false);
-  const ref = useClickOutSide(() => sethasFocus(false));
+  const ref = useClickOutSide(() => {
+    !input.length && sethasFocus(false)
+  });
   return (
     <Fragment>
       <div className="w-full max-md:h-screen md:w-3/5 md:min-h-96 bg-white rounded-2xl p-9 md:grid grid-cols-1 lg:grid-cols-2 gap-6">

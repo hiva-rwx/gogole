@@ -10,7 +10,7 @@ import TwoStepAccountRecoveryNumber from "./pages/TwoStepAccountRecoveryNumber";
 import TwoStepPhoneNumberSignin from "./pages/TwoStepPhoneNumberSignin";
 import TwoStepVeificationCodeByPhoneNumber from "./pages/TwoStepVeificationCodeByPhoneNumber";
 const App = () => {
-  const [page, setPage] = useState<Pages>("two_step_veification_code_by_phone_number");
+  const [page, setPage] = useState<Pages>("password");
   const pages: { [key in Pages]: JSX.Element } = useMemo(
     () => ({
       signin: <Signin />,
