@@ -8,16 +8,14 @@ const Password = () => {
   const [hasFocus, sethasFocus] = useState(false);
   const [input, setInput] = useState("");
   const [isShowPassword, setIsShowPassword] = useState(false);
-  const ref = useClickOutSide(() => {
-    !input.length && sethasFocus(false)
-  });
+  const ref = useClickOutSide(() => sethasFocus(true));
   return (
     <Fragment>
       <div className="w-full max-md:h-screen md:w-3/5 md:min-h-96 bg-white rounded-2xl p-9 md:grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="max-md:mb-14">
           <GlLogo />
           <div className="text-5xl font-normal my-4">Welcome</div>
-          <div className="my-5 flex border-2 px-2 py-0.5 w-fit cursor-pointer hover:bg-black/5 rounded-full items-center gap-4">
+          <div className="my-5 flex border px-2 py-0.5 w-fit cursor-pointer hover:bg-black/5 rounded-full items-center gap-4">
             <Man />
             <p>test@gmail.com</p>
             <ArrowDown />

@@ -7,7 +7,7 @@ import classNames from "classnames";
 const TwoStepCodeInSetting = () => {
   const [hasFocus, sethasFocus] = useState(false);
   const [input, setInput] = useState("");
-  const ref = useClickOutSide(() => sethasFocus(true));
+  const ref = useClickOutSide(() => sethasFocus(false));
   return (
     <Fragment>
       <div className="w-full max-md:h-screen md:w-3/5 md:min-h-96 bg-white rounded-2xl p-9 md:grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -18,7 +18,7 @@ const TwoStepCodeInSetting = () => {
             To help keep your account safe, Google wants to make sure it’s really you trying to sign
             in
           </div>
-          <div className="my-5 flex border-2 px-2 py-0.5 w-fit cursor-pointer hover:bg-black/5 rounded-full items-center gap-4">
+          <div className="my-5 flex border px-2 py-0.5 w-fit cursor-pointer hover:bg-black/5 rounded-full items-center gap-4">
             <Man />
             <p>test@gmail.com</p>
             <ArrowDown />

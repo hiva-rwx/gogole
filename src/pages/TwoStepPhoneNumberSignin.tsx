@@ -13,7 +13,7 @@ const TwoStepPhoneNumberSignin = () => {
             We will send a verification code to a phone number on your account.
           </div>
           <div className="my-2">Standard rates apply.</div>
-          <div className="my-5 flex border-2 px-2 py-0.5 w-fit cursor-pointer hover:bg-black/5 rounded-full items-center gap-4">
+          <div className="my-5 flex border px-2 py-0.5 w-fit cursor-pointer hover:bg-black/5 rounded-full items-center gap-4">
             <Man />
             <p>test@gmail.com</p>
             <ArrowDown />

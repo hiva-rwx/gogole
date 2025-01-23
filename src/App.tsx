@@ -1,18 +1,17 @@
 import { useMemo, useState } from "react";
-import { Pages } from "./types";
 import Signin from "./pages/Signin";
 import Password from "./pages/Password";
-import "./assets/main.css";
 import TwoStepDevice from "./pages/TwoStepDevice";
 import TwoStepChooseMethod from "./pages/TwoStepChooseMethod";
 import TwoStepCodeInSetting from "./pages/TwoStepCodeInSetting";
 import TwoStepAccountRecoveryNumber from "./pages/TwoStepAccountRecoveryNumber";
 import TwoStepPhoneNumberSignin from "./pages/TwoStepPhoneNumberSignin";
 import TwoStepVeificationCodeByPhoneNumber from "./pages/TwoStepVeificationCodeByPhoneNumber";
+import "./assets/main.css";
 const App = () => {
-  const [page, setPage] = useState<Pages>("password");
-  const pages: { [key in Pages]: JSX.Element } = useMemo(
-    () => ({
+  const [page, setPage] = useState<keyof typeof pages>("two_step_veification_code_by_phone_number");
+  const pages = useMemo(
+    () => ({  
       signin: <Signin />,
       password: <Password />,
       two_step_device: <TwoStepDevice />,

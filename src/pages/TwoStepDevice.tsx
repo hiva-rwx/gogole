@@ -1,13 +1,8 @@
-import React, { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { ArrowDown, GlLogo, Man } from "../assets/icons";
-import useClickOutSide from "../hooks/useClickOutSide";
-import classNames from "classnames";
 import Footer from "../components/Footer";
 
 const TwoStepDevice = () => {
-  const [hasFocus, sethasFocus] = useState(false);
-  const [input, setInput] = useState("");
-  const ref = useClickOutSide(() => sethasFocus(false));
   return (
     <Fragment>
       <div className="w-full max-md:h-screen md:w-3/5 md:min-h-96 bg-white rounded-2xl p-9 md:grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -15,10 +10,10 @@ const TwoStepDevice = () => {
           <GlLogo />
           <div className="text-5xl font-normal my-4">2-Step Verification</div>
           <div>
-            To help keep your account safe, Google wants to make sure it’s really you trying to sign
-            in
+            To help keep your account safe, Google wants to make sure it’s
+            really you trying to sign in
           </div>
-          <div className="my-5 flex border-2 px-2 py-0.5 w-fit cursor-pointer hover:bg-black/5 rounded-full items-center gap-4">
+          <div className="my-5 flex border px-2 py-0.5 w-fit cursor-pointer hover:bg-black/5 rounded-full items-center gap-4">
             <Man />
             <p>test@gmail.com</p>
             <ArrowDown />
@@ -34,10 +29,12 @@ const TwoStepDevice = () => {
             <img src="/images/2fa_device.gif" alt="2fa_device.gif" />
           </div>
           <div>
-            <div className="text-xl font-medium text-[#1f1f1f]">Check your Daria zahedan</div>
+            <div className="text-xl font-medium text-[#1f1f1f]">
+              Check your Daria zahedan
+            </div>
             <div className="text-[#1f1f1f]">
-              Google sent a notification to your Daria zahedan. Tap Yes on the notification to
-              verify it’s you.
+              Google sent a notification to your Daria zahedan. Tap Yes on the
+              notification to verify it’s you.
             </div>
             <div className="flex items-center gap-6 my-6">
               <input type="checkbox" id="show-password" className="w-4 h-4" />

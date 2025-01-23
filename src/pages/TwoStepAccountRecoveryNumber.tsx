@@ -13,13 +13,13 @@ const TwoStepAccountRecoveryNumber = () => {
             To help keep your account safe, Google wants to make sure it’s really you trying to sign
             in
           </div>
-          <div className="my-5 flex border-2 px-2 py-0.5 w-fit cursor-pointer hover:bg-black/5 rounded-full items-center gap-4">
+          <div className="my-5 flex border px-2 py-0.5 w-fit cursor-pointer hover:bg-black/5 rounded-full items-center gap-4">
             <Man />
             <p>test@gmail.com</p>
             <ArrowDown />
           </div>
           <div className="flex-grow items-end">
-            <button className="text-[#0b57d0] font-medium hover:bg-black/5 py-2 px-4 rounded-full">
+            <button className="text-[#0b57d0] font-medium hover:bg-black/5 py-2 px-4 rounded-full cursor-pointer">
               Resend it
             </button>
           </div>
@@ -33,7 +33,7 @@ const TwoStepAccountRecoveryNumber = () => {
             <div className="inline-block font-bold">41</div> on your phone to verify it’s you.
           </div>
           <div className="flex gap-8 justify-end mt-10">
-            <button className="text-[#0b57d0] font-medium hover:bg-black/5 py-2 px-4 rounded-full">
+            <button className="text-[#0b57d0] font-medium hover:bg-black/5 py-2 px-4 rounded-full cursor-pointer">
               Try another way
             </button>
           </div>

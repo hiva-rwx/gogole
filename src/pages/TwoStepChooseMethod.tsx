@@ -1,13 +1,8 @@
-import React, { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { ArrowDown, GlLogo, Man } from "../assets/icons";
-import useClickOutSide from "../hooks/useClickOutSide";
-import classNames from "classnames";
 import Footer from "../components/Footer";
 
 const TwoStepDevice = () => {
-  const [hasFocus, sethasFocus] = useState(false);
-  const [input, setInput] = useState("");
-  const ref = useClickOutSide(() => sethasFocus(false));
   return (
     <Fragment>
       <div className="w-full max-md:h-screen md:w-3/5 md:min-h-96 bg-white rounded-2xl p-9 md:grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -15,17 +10,19 @@ const TwoStepDevice = () => {
           <GlLogo />
           <div className="text-5xl font-normal my-4">2-Step Verification</div>
           <div>
-            To help keep your account safe, Google wants to make sure it’s really you trying to sign
-            in
+            To help keep your account safe, Google wants to make sure it’s
+            really you trying to sign in
           </div>
-          <div className="my-5 flex border-2 px-2 py-0.5 w-fit cursor-pointer hover:bg-black/5 rounded-full items-center gap-4">
+          <div className="my-5 flex border px-2 py-0.5 w-fit cursor-pointer hover:bg-black/5 rounded-full items-center gap-4">
             <Man />
             <p>test@gmail.com</p>
             <ArrowDown />
           </div>
         </div>
         <div className="md:mt-16 flex flex-col">
-          <div className="text-xl font-normal mb-6">Choose how you want to sign in:</div>
+          <div className="text-xl font-normal mb-6">
+            Choose how you want to sign in:
+          </div>
           <div className="flex items-start gap-5 py-4 px-3 rounded-md cursor-pointer border-b hover:bg-blue-50">
             <div>
               <svg
@@ -58,7 +55,10 @@ const TwoStepDevice = () => {
                 <path d="M23,9 C18.89,4.89 13.07,3.57 7.85,5.02 L17.42,14.59 L23,9 Z M5.76,5.76 L2.81,2.81 L1.39,4.22 L3.91,6.74 C2.88,7.37 1.89,8.11 1,9 L12,20 L14.59,17.41 L19.78,22.6 L21.19,21.19 L16,16 L5.76,5.76 Z"></path>
               </svg>
             </div>
-            <div>Use your phone or tablet to get a security code (even if it’s offline)</div>
+            <div>
+              Use your phone or tablet to get a security code (even if it’s
+              offline)
+            </div>
           </div>
           <div className="flex items-start gap-5 py-4 px-3 rounded-md cursor-pointer border-b hover:bg-blue-50">
             <div>
@@ -75,8 +75,9 @@ const TwoStepDevice = () => {
               </svg>
             </div>
             <div>
-              Get a verification code at ***********50 <br /> 2-Step Verification phone <br /> Standard rates
-              apply <br /> Unavailable because you have more secure options
+              Get a verification code at ***********50 <br /> 2-Step
+              Verification phone <br /> Standard rates apply <br /> Unavailable
+              because you have more secure options
             </div>
           </div>
           <div className="flex items-start gap-5 py-4 px-3 rounded-md cursor-pointer border-b hover:bg-blue-50">
